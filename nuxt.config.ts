@@ -19,4 +19,28 @@ export default defineNuxtConfig({
       tailwindcss()
     ]
   },
+  app: {
+    head: {
+      title: 'Mondy | Real Estate HTML Template', // default fallback title
+      htmlAttrs: {
+        lang: 'en',
+      },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico',  },
+      ],
+      meta: [
+        // Open Graph Meta Tags (Facebook, Zalo, LinkedIn...)
+        { property: 'og:title', content: 'Mondy | Real Estate HTML Template' },
+        { property: 'og:description', content: 'Find your dream home with Mondy.' },
+        { property: 'og:image', content: 'https://preview.colorlib.com/theme/mondy/img/hero-bg.jpg.webp' },
+        { property: 'og:type', content: 'website' },
+
+        // Twitter Card Meta Tags
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Mondy | Real Estate HTML Template' },
+        { name: 'twitter:description', content: 'Find your dream home with Mondy.' },
+        { name: 'twitter:image', content: 'https://preview.colorlib.com/theme/mondy/img/hero-bg.jpg.webp' }
+      ]
+    }
+  }
 })
